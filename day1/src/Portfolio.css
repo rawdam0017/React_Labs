@@ -1,0 +1,30 @@
+.Portfolio {
+    margin-top: 3rem;
+  }
+  
+  .Portfolio h1 {
+    margin: 2rem;
+  }
+  
+  .content h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+  .content {
+    width: 30%;
+    color: #fff;
+    text-align: center;
+    margin:.5em;
+    font-size: 1rem;
+  }
+  .content hr{
+    margin-left: 30px;
+  }
+  .Portfolio.content p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #666;
+    margin-bottom: 0;
+  }
+  

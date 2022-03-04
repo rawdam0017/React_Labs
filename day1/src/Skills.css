@@ -1,0 +1,29 @@
+.Focus {
+    padding-left: 5rem;
+  }
+  .Focus h5 {
+    padding-left: 3rem;
+    text-align: center;
+  }
+  hr {
+    height: 3px;
+    width: 14rem;
+    margin-left: 70px;
+  }
+.Skills ul {
+    list-style-type: none;
+    margin-left: 60px;
+  }
+  .Skills li {
+    padding-bottom: 15px;
+  }
+  .pro {
+    padding-left: 10rem;
+  }
+  
+  .Skills span {
+    width: 90px;
+  }
+  .Skills.progress {
+    padding: 20px;
+  }
