@@ -159,7 +159,7 @@ export default function Register() {
                             <div class="mb-3">
                                 <label for="Password" class="form-label">Password</label>
                                 <input
-                                    type="text"
+                                    type="password"
                                     class="form-control"
                                     id="Password"
                                     aria-describedby="Password"
@@ -179,7 +179,7 @@ export default function Register() {
                                 >Confirmpassword</label
                                 >
                                 <input
-                                    type="text"
+                                    type="password"
                                     class="form-control"
                                     id="Confirmpassword"
                                     aria-describedby="Confirmpassword"
