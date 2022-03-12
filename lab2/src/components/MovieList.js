@@ -2,20 +2,45 @@ import React from 'react'
 import { useEffect } from "react";
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
-import { getMoviesList } from "../store/actions/users";
+import { getMoviesList } from "../store/actions/move";
+import { addToFav } from "../store/actions/favorites";
 
 export default function MovieList() {
-    const movieList = useSelector(state => state.users.moviesList)
+    const movie = useSelector(state => state.movielist.moviesList)
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getMoviesList())
-    }, []);
+    });
+
+    const fav = useSelector(state => state.favorites.favMovies)
+
+    const addToFavorite = () => {
+        this.setState({ favorited: !this.state.favorited });
+        this.props.addToFavorite(this.props.movie);
+    }
+    const displayFav = () => {
+        if (!this.state.favorited) {
+            return (
+                <span
+                    className="glyphicon glyphicon-heart-empty"
+                    onClick={() => addToFavorite()}
+                ></span>
+            );
+        } else {
+            return (
+                <span
+                    className="glyphicon glyphicon-heart"
+                    onClick={() => this.setState({ favorited: !this.state.favorited })}
+                ></span>
+            );
+        }
+    }
 
 
     return (
         <div className='container'>
             <div className='row'>
-                {movieList.map((mov) => {
+                {movie.map((mov) => {
                     return (
                         <div className='col-3'>
                             <div class="card" style={{ width: "18rem;" }}>

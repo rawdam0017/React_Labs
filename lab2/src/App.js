@@ -15,8 +15,8 @@ function App() {
       <Navbar/>
       <div className='App'>
         <Switch>
-          <Route path={"/MovieList"} component={MovieList} />
-          <Route path={"/favorites"} component={Favorites} />
+          <Route path={"/"} exact component={MovieList} />
+          <Route path={"/favorites"}  component={Favorites} />
           <Route path={"/Login"} component={Login} />
           <Route path={"/Register"} component={Register} />
           <Route path={"*"} component={NotFound} />

@@ -6,7 +6,7 @@ export const getMoviesList = () => (dispatch) => {
     .then((res) =>
       dispatch({
         type: "GET_MOVIES_LIST",
-        payload: res.data,
+        payload: res.data.results,
       })
     )
     .catch((err) => console.log(err));
